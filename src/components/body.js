@@ -7,7 +7,7 @@ import nc from "../images/nc.png";
 export default function Body() {
   return (
     <div className="body">
-      <p className="heading text-center">Projects</p>
+      <p className="heading text-center">Some things I've built</p>
       <hr style={{ width: "10%" }} className="underline"></hr>
       <Card
         images={[laf]}

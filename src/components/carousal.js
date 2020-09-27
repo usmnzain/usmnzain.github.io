@@ -16,8 +16,9 @@ export default function Carousal(props) {
   return (
     <Slider {...settings}>
       {props.images.map((item) => (
-        <div>
+        <div className='project-img-container'>
           <img className="project-img" alt={item} src={item} />
+          <div class="overlay"></div>
         </div>
       ))}
     </Slider>

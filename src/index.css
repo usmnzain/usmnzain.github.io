@@ -8,6 +8,18 @@ body {
   background-color: #222831;
 }
 
+a{
+  display: inline-block;
+  text-decoration: none;
+  text-decoration-skip-ink: auto;
+  color: inherit;
+  position: relative;
+  cursor: pointer;
+}
+a:hover{
+  color: #d65a31;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -15,7 +27,6 @@ code {
 
 .header {
   margin-top: 5vh;
-  height: 35vh;
   /* background-color: #393e46; */
   color: #eeeeee;
 }
@@ -26,9 +37,14 @@ code {
   font-weight: bold;
   color: #d65a31;
 }
+@media(max-width: 756px){
+  .title{
+    font-size: 52px;
+  }
+}
 .body {
-  height: 60vh;
   color: #eeeeee;
+  
 }
 .heading {
   font-weight: 300;
@@ -84,9 +100,34 @@ i {
   content: none;
 }
 
+.project-img-container{
+  display: block !important;
+}
 .project-img {
+  display: block;
   background-repeat: no-repeat;
   width: 100%;
+  height: auto;
+  filter: grayscale(100%) contrast(1) brightness(90%);
+}
+
+.overlay{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  transition: .5s ease;
+  background-color: #d65a31;
+  opacity: 0.7;
+}
+
+.project-img-container:hover .overlay{
+  opacity: 0;
+}
+
+.project-img-container:hover .project-img{
+  filter: none;
 }
 
 .card-heading {

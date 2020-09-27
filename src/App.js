@@ -5,8 +5,12 @@ import Body from "./components/body";
 function App() {
   return (
     <div className="container">
-      <Header />
-      <Body />
+      <div className="row">
+        <Header />
+      </div>
+      <div className="row">
+        <Body />
+      </div>
     </div>
   );
 }
