@@ -1,15 +1,19 @@
 import React from "react";
-import Header from "./components/header";
-import Body from "./components/body";
+import Landing from "./components/landing";
+import Projects from "./components/projects";
+import Header from "./components/header"
 
 function App() {
   return (
     <div className="container">
-      <div className="row">
+      <div className='row'>
         <Header />
       </div>
+      <div style={{ 'height': '100vh' }} className="row">
+        <Landing />
+      </div>
       <div className="row">
-        <Body />
+        <Projects />
       </div>
     </div>
   );

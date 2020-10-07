@@ -8,6 +8,17 @@ body {
   background-color: #222831;
 }
 
+ul{
+  list-style: none;
+  margin-left: ;
+}
+li{
+  float: left;
+}
+li a{
+  display: block;
+  padding: 12px
+}
 a{
   display: inline-block;
   text-decoration: none;
@@ -26,7 +37,14 @@ code {
 }
 
 .header {
-  margin-top: 5vh;
+  margin-top: 2vh;
+  /* background-color: #393e46; */
+  color: #eeeeee;
+  margin-left: auto;
+}
+
+.landing {
+  margin-top: 2vh;
   /* background-color: #393e46; */
   color: #eeeeee;
 }
