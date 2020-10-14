@@ -1,23 +1,15 @@
 import React from "react";
 
-export default function Landing() {
+export default function Landing( props ) {
     return (
         <div className="landing">
-            <p className="title">&gt; Usman Zain</p>
-            <p className="lead">
-                I am a web developer based in Pakistan. My passion is building simple,
-                beautiful user experiences.
-      </p>
-            <p className="resume">
-                Take a look at my resume: <span><a href={`${process.env.PUBLIC_URL} /resume/usman_zain.pdf`}>usmanzain.pdf</a></span>
+            <p>
+                <span style={{ fontSize: '18px' }}>Hi, my name is</span>
+                <br /> <span className="title">Usman Zain</span> <br />
+                <span className="lead">I am a software engineer <br />and a web developer.</span>
             </p>
-            <p className="connect">
-                Connect with me:
-        <a href="https://twitter.com/usmnzen"><i className="fab fa-twitter-square"></i></a>
-                <a href="https://github.com/usmnzain/"><i className="fab fa-github-square"></i></a>
-                <a href="https://www.linkedin.com/in/usman-zain-ul-abedin-17779894/"><i className="fab fa-linkedin"></i></a>
-                <a href="mailto:uszain@gmail.com"><i class="fas fa-envelope-square"></i></a>
-            </p>
+
+            <button onClick={()=>{props.scrollTo(props.contactRef.current)}} className="landing-button">Get In Touch</button>
         </div >
     );
 }

@@ -6,7 +6,7 @@ import nc from "../../images/nc.png";
 
 export default function Projects() {
     return (
-        <div className="body">
+        <div >
             <p className="heading text-center">Some things I've built</p>
             <hr style={{ width: "10%" }} className="underline"></hr>
             <Card
@@ -19,7 +19,7 @@ export default function Projects() {
                 betting odds, previous head to head matches, team information, league
                 standing etc. It has woocommerce store connected through wordpress api
                 and a custom mobile design. Users can save matches they want to follow.
-      </Card>
+            </Card>
             <Card
                 images={[nc]}
                 demo={"https://pure-wave-53978.herokuapp.com/"}
@@ -29,7 +29,7 @@ export default function Projects() {
                 A real estate app with employee portal. Employees can post ads about
                 different properties, users view ads, book appointments etc. Currently,
                 this project only contains a dashboard for employees.
-      </Card>
+            </Card>
             <Card
                 images={[brandmefy]}
                 demo={"https://brandmefy.com/"}
@@ -38,14 +38,8 @@ export default function Projects() {
             >
                 A startup that creates custom digital signage. Website is purely based
                 on javascript. It has minimal design and is fully responsive.
-      </Card>
+            </Card>
 
-            <p className="heading text-center">Contact Me</p>
-            <hr style={{ width: "16%" }} className="underline"></hr>
-            <div>
-                <p className="contact-email">uszain@gmail.com</p>
-            </div>
-            <p className="copyright-text">Copyright ©2020 All rights reserved</p>
         </div>
     );
 }
