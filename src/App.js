@@ -1,7 +1,7 @@
 import React, { useRef } from "react";
 import Landing from "./components/landing";
 import Projects from "./components/projects";
-import Header from "./components/header"
+import Header from "./components/common/header"
 import About from "./components/about"
 import Contact from './components/contact'
 
@@ -23,7 +23,7 @@ function App() {
       <Header scrollTo={scrollTo} aboutRef={aboutRef} projectRef={projectRef} contactRef={contactRef} />
 
       <div style={{ marginTop: '100px' }} className="container body">
-        <div style={{ 'height': '100vh' }} className="row">
+        <div className="row">
           <Landing scrollTo={scrollTo} contactRef={contactRef} />
         </div>
         <div ref={aboutRef} className='row'>
