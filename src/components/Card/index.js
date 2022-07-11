@@ -1,5 +1,5 @@
 import React from "react";
-import Carousal from "./carousal";
+import Carousal from "../Carousel";
 
 export default function Card(props) {
   return (

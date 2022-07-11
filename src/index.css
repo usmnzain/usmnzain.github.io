@@ -21,25 +21,28 @@ li {
   align-self: center;
 }
 
-li a {
+li {
   display: block;
   padding: 0px 12px 0px 12px;
-  font-size: 14px;
+  font-size: 18px;
   font-weight: 600;
   transition: 0.2s;
 }
 
-a {
+.header-link {
   display: inline-block;
   text-decoration: none;
   text-decoration-skip-ink: auto;
   color: inherit;
   position: relative;
   cursor: pointer;
+  border-bottom: 2px #eeeeee solid;
 }
 
-a:hover {
+.header-link:hover {
   text-decoration: none;
+  color: #d65a31;
+  border-bottom: 2px #d65a31 solid;
 }
 
 li:hover {
@@ -64,8 +67,6 @@ code {
 
 .header {
   color: #e0e0e0;
-  padding: 0px 10vh;
-  position: fixed;
   width: 100%;
   height: 10vh;
   z-index: 100;
@@ -80,18 +81,19 @@ code {
 }
 
 .logo {
-  width: 30px;
+  width: 35px;
 }
 
 .landing {
   width: 100%;
-  margin-top: 10vh;
   color: #eeeeee;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 80%;
 }
+
 .title {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
@@ -99,27 +101,51 @@ code {
   font-weight: 800;
   color: #d65a31;
 }
-@media (max-width: 756px) {
-  .title {
-    font-size: 52px;
-  }
+
+.lead {
+  color: #65686d;
+  font-weight: 700;
+  font-size: 38px;
 }
 
-.landing-artwork-container{
+.contact-icon {
+  font-size: 32px;
+}
+
+.landing-artwork-container {
   display: flex;
   align-items: flex-start;
   justify-content: flex-end;
   width: 50%;
 }
 
-.landing-artwork{
-  width: 70%;
+.landing-artwork {
+  width: 100%;
 }
 
-.lead {
-  color: #65686d;
-  font-weight: 700;
-  font-size: 38px;
+@media (max-width: 756px) {
+  .landing {
+    flex-direction: column-reverse;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .landing-artwork-container {
+    margin-bottom: 5vh;
+    margin-top: 5vh;
+  }
+
+  .title {
+    font-size: 52px;
+  }
+
+  .lead {
+    font-size: 24px;
+  }
+
+  .contact-icon {
+    font-size: 24px;
+  }
 }
 
 .landing-button {
@@ -150,6 +176,9 @@ code {
 .underline {
   margin-top: 0px;
   text-align: left;
+  margin-left: 0px;
+  margin-bottom: 2rem;
+  width: 30%;
   height: 7px;
   background-color: #d65a31;
 }
@@ -166,36 +195,37 @@ code {
   font-weight: normal;
 }
 
+.connect > a:not(:first-child) {
+  padding-left: 8px;
+}
+
 i {
   cursor: pointer;
-  padding-left: 8px;
   color: #65686d;
   transition: 0.3s;
 }
+
 i:hover {
   color: #d65a31;
 }
 
 .section {
-  margin: auto;
-  width: 50%;
+  margin-top: 10vh;
   display: flex;
   flex-direction: column;
-  text-align: center;
-  height: 100vh;
   justify-content: center;
 }
 
-.about-text{
+.about-text {
   text-align: left;
-  font-size: 18px;
+  font-size: 20px;
 }
 
-.about-skills{
+.about-skills {
   display: flex;
 }
 
-.about-skills > p{
+.about-skills > p {
   margin-right: 100px;
 }
 
